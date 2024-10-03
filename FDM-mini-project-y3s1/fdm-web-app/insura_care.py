@@ -55,10 +55,10 @@ dframe = dframe.drop(columns=[ 'CLAIM_FLAG'])
 x = dframe.drop(columns=['CLM_AMT'])  
 y = dframe['CLM_AMT']
 st.write("vgood")
-y_log= np.log1p(y)
+#y_log= np.log1p(y)
 st.write("niceee")
 st.write(y_log)
-x_train, x_test, y_train, y_test = train_test_split(x, y_log, test_size=0.3, random_state=42)
+x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.3, random_state=42)
 
 basic_tree = DecisionTreeRegressor(random_state=42, max_depth=5)
 
