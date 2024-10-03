@@ -48,7 +48,7 @@ except pd.errors.ParserError as e:
     st.text(f"Error details: {e}")       
 
 dframe = dframe[dframe['CLAIM_FLAG'] == 1]
-st.write("came")
+st.write(dframe)
 
 dframe = dframe.drop(columns=[ 'CLAIM_FLAG'])
 
