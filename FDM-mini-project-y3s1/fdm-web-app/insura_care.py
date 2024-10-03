@@ -36,7 +36,7 @@ csv_url = "https://github.com/Ramla24/mm/blob/main/FDM-mini-project-y3s1/fdm-web
 
 
     # Read the uploaded CSV into a DataFrame
-dframe = pd.read_csv(csv_url)
+dframe = pd.read_csv(csv_url, encoding='utf-8')
 
 dframe = dframe[dframe['CLAIM_FLAG'] == 1]
 
