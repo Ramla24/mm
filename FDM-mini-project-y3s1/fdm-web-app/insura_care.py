@@ -32,7 +32,7 @@ st.write("""
 #####################################################################################################################################################################
 #DECISON TREE MODEL BUILDING#
 
-csv_url = ""
+csv_url = "https://github.com/Ramla24/mm/blob/main/FDM-mini-project-y3s1/data/max_scaled_data"
 
 
  
