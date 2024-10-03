@@ -47,7 +47,7 @@ except pd.errors.ParserError as e:
     st.error("There was an error parsing the CSV file.")
     st.text(f"Error details: {e}")       
 
-dframe = dframe[dframe['CLAIM_FLAG'] == 1]
+#dframe = dframe[dframe['CLAIM_FLAG'] == 1]
 st.dataframe(dframe)
 
 dframe = dframe.drop(columns=[ 'CLAIM_FLAG'])
