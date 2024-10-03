@@ -32,11 +32,11 @@ st.write("""
 #####################################################################################################################################################################
 #DECISON TREE MODEL BUILDING#
 
-uploaded_file = st.file_uploader("normalized_data", type="csv")
+csv_url = "https://github.com/Ramla24/mm/blob/main/FDM-mini-project-y3s1/fdm-web-app/normalized_data"
 
-if uploaded_file is not None:
+
     # Read the uploaded CSV into a DataFrame
-    dframe = pd.read_csv(uploaded_file)
+dframe = pd.read_csv(csv_url)
 
 dframe = dframe[dframe['CLAIM_FLAG'] == 1]
 
