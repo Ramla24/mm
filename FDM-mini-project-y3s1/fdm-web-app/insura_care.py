@@ -32,7 +32,11 @@ st.write("""
 #####################################################################################################################################################################
 #DECISON TREE MODEL BUILDING#
 
-dframe = pd.read_csv("normalized_data")
+uploaded_file = st.file_uploader("normalized_data", type="csv")
+
+if uploaded_file is not None:
+    # Read the uploaded CSV into a DataFrame
+    dframe = pd.read_csv(uploaded_file)
 
 dframe = dframe[dframe['CLAIM_FLAG'] == 1]
 
