@@ -48,14 +48,16 @@ except pd.errors.ParserError as e:
     st.text(f"Error details: {e}")       
 
 dframe = dframe[dframe['CLAIM_FLAG'] == 1]
+st.write("came")
 
 dframe = dframe.drop(columns=[ 'CLAIM_FLAG'])
 
 x = dframe.drop(columns=['CLM_AMT'])  
 y = dframe['CLM_AMT']
-
+st.write("vgood")
 y_log= np.log1p(y)
-
+st.write("niceee")
+st.write(y_log)
 x_train, x_test, y_train, y_test = train_test_split(x, y_log, test_size=0.3, random_state=42)
 
 basic_tree = DecisionTreeRegressor(random_state=42, max_depth=5)
