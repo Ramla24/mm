@@ -36,7 +36,8 @@ csv_url = "https://github.com/Ramla24/mm/blob/main/FDM-mini-project-y3s1/fdm-web
 
 
     # Read the uploaded CSV into a DataFrame
-dframe = pd.read_csv(csv_url, encoding='utf-8', warn_bad_lines=True,)
+column_names =['Unnamed: 0','KIDSDRIV','HOMEKIDS','YOJ','INCOME','PARENT1','HOME_VAL','MSTATUS','TRAVTIME','BLUEBOOK','TIF','RED_CAR','OLDCLAIM','CLM_FREQ','REVOKED','MVR_PTS','CLM_AMT','CAR_AGE','CLAIM_FLAG','GEN_AGE','GENDER_M','GENDER_z_F','EDUCATION_<High School','EDUCATION_Bachelors','EDUCATION_Masters','EDUCATION_PhD','EDUCATION_z_High School','OCCUPATION_Clerical','OCCUPATION_Doctor','OCCUPATION_Home Maker','OCCUPATION_Lawyer,OCCUPATION_Manager','OCCUPATION_Professional','OCCUPATION_Student','OCCUPATION_z_Blue Collar','CAR_USE_Commercial','CAR_USE_Private','CAR_TYPE_Minivan','CAR_TYPE_Panel Truck','CAR_TYPE_Pickup','CAR_TYPE_Sports Car','CAR_TYPE_Van','CAR_TYPE_z_SUV','URBANICITY_Highly Urban/ Urban','URBANICITY_z_Highly Rural/ Rural']
+dframe = pd.read_csv(csv_url, encoding='utf-8', names=column_names)
 
 dframe = dframe[dframe['CLAIM_FLAG'] == 1]
 
