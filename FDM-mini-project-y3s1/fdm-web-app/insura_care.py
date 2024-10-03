@@ -32,7 +32,7 @@ st.write("""
 #####################################################################################################################################################################
 #DECISON TREE MODEL BUILDING#
 
-csv_url = "https://github.com/Ramla24/mm/blob/main/FDM-mini-project-y3s1/fdm-web-app/normalized_data"
+csv_url = "https://github.com/Ramla24/mm/blob/main/FDM-mini-project-y3s1/data/normalized_data"
 
 
  
