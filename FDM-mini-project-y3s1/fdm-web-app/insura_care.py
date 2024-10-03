@@ -219,7 +219,7 @@ else:
 #*********************************************************************************************************************************************************
 #ENCODING INPUT VALUES#
 
-df_raw = pd.read_csv('normalized_data')
+df_raw = pd.read_csv('csv_url')
 df_dropped = df_raw.drop(columns=['Unnamed: 0', 'CLAIM_FLAG', 'CLM_AMT'])
 df = pd.concat([input_df, df_dropped] , axis=0)
 
