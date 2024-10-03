@@ -49,7 +49,7 @@ except pd.errors.ParserError as e:
 
 dframe = dframe[dframe['CLAIM_FLAG'] == 1]
 
-dframe = dframe.drop(columns=[ 'Unnamed: 0', 'CLAIM_FLAG'])
+dframe = dframe.drop(columns=[ 'CLAIM_FLAG'])
 
 x = dframe.drop(columns=['CLM_AMT'])  
 y = dframe['CLM_AMT']
